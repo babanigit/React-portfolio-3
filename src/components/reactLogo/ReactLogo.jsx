@@ -6,7 +6,7 @@ import logo from "./logo.svg";
 const ReactLogo = () => {
   return (
     <>
-      <div className="App">
+      <div className="App w-screen">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
