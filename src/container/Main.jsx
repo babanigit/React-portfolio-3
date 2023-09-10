@@ -2,26 +2,54 @@ import React from "react";
 import { Route, Routes, HashRouter, NavLink } from "react-router-dom";
 
 import Splash from "../pages/splash/Splash";
+import Home from "../pages/home/HomeComponent";
 
-const Main = () => {
+const Main = (propss) => {
   var demo = true;
   if (demo) {
     return (
       <>
+        {/* <NavLink exact to={"/"}>
+          {" "}
+          clicked{" "}
+        </NavLink> */}
 
-      <NavLink exact to={"/splash"} > search </NavLink>
-
-        <Routes basename="/">
-          <Route path="/" exact render={() => <Splash />} />
+        <Routes>
           <Route
-          exact
+            path="/"
+            exact
+            // element={<Splash/>}
+            Component={() => (
+              <>
+                <Splash
+                  // {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              </>
+            )}
+          />
+          <Route
+            path="/home"
+            // element={<Home/>}
+            Component={() => (
+              <>
+                <Home
+                  // {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              </>
+            )}
+          />
+
+          <Route
             path="/splash"
-            element={<Splash/>}
-            render={(e) => (
+            Component={() => (
               <Splash
                 // {...props}
-                // theme={propss.theme}
-                // setTheme={propss.setTheme}
+                theme={propss.theme}
+                setTheme={propss.setTheme}
               />
             )}
           />

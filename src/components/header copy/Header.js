@@ -31,7 +31,6 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "home";
 
   const [currTheme, setCurrTheme] = useState(props.theme);
 
@@ -62,9 +61,10 @@ function Header(props) {
       />
     );
 
+  const link = settings.isSplash ? "/splash" : "home";
+  
   return (
     <Fade top duration={1000} distance="20px">
-
       <div>
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
@@ -81,7 +81,7 @@ function Header(props) {
           <ul className="menu">
             <li>
               <NavLink
-                className="homei"
+                className="home"
                 to="/home"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}

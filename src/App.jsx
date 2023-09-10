@@ -14,8 +14,8 @@ import { GlobalStyles } from "./global";
 // import {Routes,Route,Navigate} from "react-router-dom";
 
 function App() {
-  // const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-  const[theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  // const[theme, setTheme] = useState("dark");
 
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
         <GlobalStyles />
         <Main theme={themes[theme]} setTheme={setTheme} />
       </ThemeProvider>
-      <ReactLogo />
+      {/* <ReactLogo /> */}
     </>
   );
 }
