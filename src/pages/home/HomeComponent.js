@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
-import Greeting from "../../containers/greeting/Greeting";
-import Skills from "../../containers/skills/Skills";
+import Greeting from "../../container/greeting/Greeting";
+import Skills from "../../container/skills/Skills";
 import Footer from "../../components/footer/Footer";
 
 function Home(props) {

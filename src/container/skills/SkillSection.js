@@ -21,10 +21,13 @@ function GetSkillSvg(props) {
 function SkillSection(props) {
   const theme = props.theme;
   return (
+
+
     <div>
       {skills.data.map((skill, index) => {
         if (index % 2 === 0) {
           return (
+
             <div key={skill.title} className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
@@ -59,6 +62,7 @@ function SkillSection(props) {
               </div>
             </div>
           );
+          
         } else {
           return (
             <div key={skill.title} className="skills-main-div">
@@ -71,7 +75,11 @@ function SkillSection(props) {
                 <Fade left duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
+
+
                 <Fade left duration={2000}>
+
+                  {/* mapping of arrays */}
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -85,7 +93,9 @@ function SkillSection(props) {
                       );
                     })}
                   </div>
+
                 </Fade>
+
               </div>
               <Fade right duration={2000}>
                 <div className="skills-image-div">
@@ -97,6 +107,7 @@ function SkillSection(props) {
         }
       })}
     </div>
+
   );
 }
 

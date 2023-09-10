@@ -48,6 +48,18 @@ export default function socialMedia() {
         rel="noopener noreferrer"
       >
         <i className="fab fa-instagram"></i>
+        
+        <span></span>
+      </a>
+
+      <a
+        href={socialMediaLinks.facebook}
+        className="icon-button facebook"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fab fa-facebook"></i>
+
         <span></span>
       </a>
     </div>
