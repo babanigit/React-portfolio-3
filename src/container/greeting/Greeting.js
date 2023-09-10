@@ -3,7 +3,7 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; //useHistory
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
@@ -22,12 +22,12 @@ export default function Greeting(props) {
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main flex justify-evenly">
-          
+
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">{greeting.title}</h1>
               <p
-                className="greeting-text-p subTitle"
+                className="greeting-text-p subTitle my-14"
                 style={{ color: theme.secondaryText }}
               >
                 <span>I'm </span>
