@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes, HashRouter , NavLink } from "react-router-dom";
 
-import Splash from "../pages/splash/Splash";
-import Home from "../pages/home/HomeComponent";
+import Splash from "../pages/0splash/Splash";
+import Home from "../pages/1home/HomeComponent";
 
 const Main = (propss) => {
   var demo = true;
@@ -42,7 +42,6 @@ const Main = (propss) => {
               </>
             )}
           />
-
           <Route
             path="/splash"
             Component={() => (
@@ -53,6 +52,19 @@ const Main = (propss) => {
               />
             )}
           />
+          {/* <Route
+            path="/experience"
+            exact
+            render={(props) => (
+              <Experience
+                {...props}
+                theme={propss.theme}
+                setTheme={propss.setTheme}
+              />
+            )}
+          /> */}
+
+          
         </Routes>
       </>
     );
