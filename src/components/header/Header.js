@@ -31,18 +31,19 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "home";
 
+  const link = settings.isSplash ? "/splash" : "home";
   const [currTheme, setCurrTheme] = useState(props.theme);
 
+  // function for theme changing 
   function changeTheme() {
     if (currTheme === "light") {
       props.setTheme("dark");
-      localStorage.setItem("theme", "dark");
+      // localStorage.setItem("theme", "dark");
       setCurrTheme("dark");
     } else {
       props.setTheme("light");
-      localStorage.setItem("theme", "light");
+      // localStorage.setItem("theme", "light");
       setCurrTheme("light");
     }
   }
@@ -134,7 +135,7 @@ function Header(props) {
                 Contact and Resume
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <a
                 className="cr"
                 target="_blank"
@@ -146,7 +147,7 @@ function Header(props) {
               >
                 Journalify
               </a>
-            </li>
+            </li> */}
             <button className=" flex " {...styles} onClick={changeTheme}>
               {icon}
             </button>

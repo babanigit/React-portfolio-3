@@ -3,13 +3,13 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useNavigate } from "react-router-dom"; //useHistory
+import { useHistory } from "react-router-dom"; //useHistory useNavigate
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useNavigate();
+  const history = useHistory();
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,

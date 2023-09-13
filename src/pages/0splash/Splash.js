@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Splash.css";
-import { Navigate } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 function AnimatedSplash(props) {
   return (
@@ -24,7 +24,7 @@ function Splash(props) {
 
   return redirect ? (
     
-    <Navigate to="/home" />
+    <Redirect to="/home" />
   ) : (
     <AnimatedSplash theme={props.theme} />
   );

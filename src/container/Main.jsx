@@ -1,72 +1,86 @@
 import React from "react";
-import { Route, Routes, HashRouter , NavLink } from "react-router-dom";
+import { Route, Routes, Switch, HashRouter, NavLink } from "react-router-dom";
+
+// import { Route,  HashRouter, NavLink } from "react-router-dom";
 
 import Splash from "../pages/0splash/Splash";
 import Home from "../pages/1home/HomeComponent";
+import Experience from "../pages/3experience/Experience";
+import Education from "../pages/2education/EducationComponent"
 
 const Main = (propss) => {
   var demo = true;
   if (demo) {
     return (
-      <>
+      <div>
         {/* <NavLink exact to={"/"}>
           {" "}
           clicked{" "}
         </NavLink> */}
-
-        <Routes>
-          <Route
-            path="/"
-            exact
-            // element={<Splash/>}
-            Component={() => (
-              <>
+        <HashRouter basename="/">
+          <Switch>
+            <Route
+              path="/"
+              exact
+              // element={<Splash/>}
+              // i used render instead of component
+              render={() => (
+                <>
+                  <Splash
+                    // {...props}
+                    theme={propss.theme}
+                    setTheme={propss.setTheme}
+                  />
+                </>
+              )}
+            />
+            <Route
+              path="/home"
+              // element={<Home/>}
+              render={() => (
+                <>
+                  <Home
+                    {...propss}
+                    theme={propss.theme}
+                    setTheme={propss.setTheme}
+                  />
+                </>
+              )}
+            />
+            <Route
+              path="/splash"
+              render={() => (
                 <Splash
                   // {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              </>
-            )}
-          />
-          <Route
-            path="/home"
-            // element={<Home/>}
-            Component={() => (
-              <>
-                <Home
-                  // {...props}
+              )}
+            />
+            <Route
+              path="/education"
+              render={(props) => (
+                <Education
+                  {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
-              </>
-            )}
-          />
-          <Route
-            path="/splash"
-            Component={() => (
-              <Splash
-                // {...props}
-                theme={propss.theme}
-                setTheme={propss.setTheme}
-              />
-            )}
-          />
-          {/* <Route
-            path="/experience"
-            exact
-            render={(props) => (
-              <Experience
-                {...props}
-                theme={propss.theme}
-                setTheme={propss.setTheme}
-              />
-            )}
-          /> */}
-
-          
-        </Routes>
-      </>
+              )}
+            />
+            <Route
+              path="/experience"
+              exact
+              render={(props) => (
+                <Experience
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+          </Switch>
+        </HashRouter>
+      </div>
     );
   } else {
     return <></>;
