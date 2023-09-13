@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../components/1header/Header";
+import Footer from "../../components/2footer/Footer";
 import ExperienceAccordion from "../../container/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
@@ -16,9 +16,13 @@ function Experience(props) {
       <div className="basic-experience">
         <Fade bottom duration={2000} distance="40px">
           <div className="experience-heading-div">
+
+            {/* div 1 */}
             <div className="experience-heading-img-div">
               <ExperienceImg theme={theme} />
             </div>
+
+            {/* div 2 */}
             <div className="experience-heading-text-div">
               <h1
                 className="experience-heading-text"

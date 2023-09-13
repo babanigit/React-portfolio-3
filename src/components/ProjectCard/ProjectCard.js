@@ -25,6 +25,7 @@ export default function ProjectCard({ repo: project, theme }) {
   });
 
   return (
+
     <div>
       <Fade bottom duration={2000} distance="40px">
         <div
@@ -47,5 +48,6 @@ export default function ProjectCard({ repo: project, theme }) {
         </div>
       </Fade>
     </div>
+    
   );
 }

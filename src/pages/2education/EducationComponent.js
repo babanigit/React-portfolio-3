@@ -2,12 +2,14 @@ import React from "react";
 import { Fade } from "react-reveal";
 
 
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import Header from "../../components/1header/Header";
+import Footer from "../../components/2footer/Footer";
 import Educations from "../../container/education/Educations";
 import Certifications from "../../container/certifications/Certifications";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
+
+import educationTrail from "../../portfolio";
 
 
 function Education(props) {
@@ -32,8 +34,7 @@ function Education(props) {
                 className="experience-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                I actively participate in hackathons and other tech-related
-                activities. Below are some of my major certifications.
+                {educationTrail.x}
               </p>
             </div>
           </div>

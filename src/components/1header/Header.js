@@ -103,7 +103,7 @@ function Header(props) {
               </NavLink>
             </li>
             <li>
-              <NavLink
+              {/* <NavLink
                 className="xp"
                 to="/experience"
                 tag={Link}
@@ -111,7 +111,7 @@ function Header(props) {
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Experience
-              </NavLink>
+              </NavLink> */}
             </li>
             <li>
               <NavLink

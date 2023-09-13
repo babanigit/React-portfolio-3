@@ -7,6 +7,7 @@ import Splash from "../pages/0splash/Splash";
 import Home from "../pages/1home/HomeComponent";
 import Experience from "../pages/3experience/Experience";
 import Education from "../pages/2education/EducationComponent"
+import Projects from "../pages/4projects/Projects"
 
 const Main = (propss) => {
   var demo = true;
@@ -67,11 +68,22 @@ const Main = (propss) => {
                 />
               )}
             />
-            <Route
+            {/* <Route
               path="/experience"
               exact
               render={(props) => (
                 <Experience
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            /> */}
+
+            <Route
+              path="/projects"
+              render={(props) => (
+                <Projects
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
