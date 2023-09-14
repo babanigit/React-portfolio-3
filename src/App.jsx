@@ -19,7 +19,7 @@ import { GlobalStyles } from "./global";
 function App() {
 
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   // const[theme, setTheme] = useState("dark");
 
   return (

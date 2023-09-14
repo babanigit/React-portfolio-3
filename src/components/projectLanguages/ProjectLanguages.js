@@ -1,12 +1,15 @@
 import React from "react";
 import "./ProjectLanguages.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
+   
 function ProjectLanguages(props) {
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
+          
+          {/* mapping of logo */}
           {props.logos.map((logo) => {
             return (
               <OverlayTrigger
@@ -32,6 +35,7 @@ function ProjectLanguages(props) {
               </OverlayTrigger>
             );
           })}
+
         </ul>
       </div>
     </div>
