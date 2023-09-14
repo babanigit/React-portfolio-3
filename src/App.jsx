@@ -2,7 +2,7 @@
 // we are using props to change theme state of every components 
 
 // import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 // import { CursorProvider } from "react-cursor-custom";
 // import ReactGA from "react-ga";
@@ -19,8 +19,7 @@ import { GlobalStyles } from "./global";
 function App() {
 
 
-  const [theme, setTheme] = useState("light");
-  // const[theme, setTheme] = useState("dark");
+  const[theme, setTheme] = useState("dark");
 
   return (
     <>

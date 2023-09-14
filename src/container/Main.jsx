@@ -80,7 +80,7 @@ const Main = (propss) => {
                 />
               )}
             /> */}
-
+            
             <Route
               path="/projects"
               render={(props) => (

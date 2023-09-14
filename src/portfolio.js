@@ -44,23 +44,30 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
+          skillName: "Tailwindcss",
+          fontAwesomeClassname: "devicon:tailwindcss",
           style: {
             backgroundColor: "transparent",
           },
         },
         {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
+          skillName: "React",
+          fontAwesomeClassname: "skill-icons:react-dark",
           style: {
             backgroundColor: "white",
             color: "#D00000",
           },
         },
         {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
+          skillName: "git",
+          fontAwesomeClassname: "logos:git",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Nodejs",
+          fontAwesomeClassname: "logos:nodejs",
           style: {
             backgroundColor: "transparent",
           },
@@ -89,23 +96,23 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
+          skillName: "Java",
+          fontAwesomeClassname: "logos:java",
           style: {
             backgroundColor: "transparent",
           },
         },
         {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
+          skillName: "c++",
+          fontAwesomeClassname: "skill-icons:cpp",
           style: {
             backgroundColor: "white",
             color: "#D00000",
           },
         },
         {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
+          skillName: "SQL",
+          fontAwesomeClassname: "vscode-icons:file-type-sql",
           style: {
             backgroundColor: "transparent",
           },
