@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 
 import AudioFile from "./op.mp3";
 
-class Aplayer extends Component {
+ class Aplayer extends Component {
   audioSong = new Audio(AudioFile);
 
   state = {
