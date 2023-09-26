@@ -126,8 +126,8 @@ const skills = {
           },
         },
         {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
+          skillName: "Linux",
+          fontAwesomeClassname: "devicon:linux",
           style: {
             backgroundColor: "transparent",
             color: "#6E6E6E",

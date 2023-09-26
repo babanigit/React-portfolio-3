@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 
 import AudioFile from "./op.mp3";
 
- class Aplayer extends Component {
+class Aplayer extends Component {
   audioSong = new Audio(AudioFile);
 
   state = {
@@ -27,7 +27,15 @@ import AudioFile from "./op.mp3";
         <div>
           <div>
             <button onClick={this.playPause}>
-              {this.state.isPlaying ? "playing" : "paused"}
+              {this.state.isPlaying ? (
+                <div className="iconify" data-icon="icon-park:pause">
+                  {""}
+                </div>
+              ) : (
+                <div className="iconify" data-icon="icon-park:play">
+                  {""}
+                </div>
+              )}
             </button>
           </div>
         </div>
