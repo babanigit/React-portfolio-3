@@ -16,7 +16,7 @@ const greeting = {
   full_name: "Aniket Panchal",
   subTitle: "Full Stack Developer, digital Artist. Always learning.",
   resumeLink:
-    "",
+    "https://drive.google.com/file/d/14Al3fgsnxv_PbSxtPiW2XBEJlRLdPyNQ/view?usp=drive_link",
     mail: "mailto:hrishipatel99@gmail.com",
 };
 
@@ -451,7 +451,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "me.jpg",
+    profile_image_path: "me2.jpg",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },

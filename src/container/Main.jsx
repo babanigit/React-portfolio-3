@@ -29,7 +29,7 @@ const Main = (propss) => {
               render={() => (
                 <>
                   <Splash
-                    // {...props}
+                    {...propss}
                     theme={propss.theme}
                     setTheme={propss.setTheme}
                   />
@@ -45,6 +45,7 @@ const Main = (propss) => {
                     {...propss}
                     theme={propss.theme}
                     setTheme={propss.setTheme}
+                    setTrial = {propss.setTrial}
                   />
                 </>
               )}
@@ -53,7 +54,7 @@ const Main = (propss) => {
               path="/splash"
               render={() => (
                 <Splash
-                  // {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
@@ -63,7 +64,7 @@ const Main = (propss) => {
               path="/education"
               render={(props) => (
                 <Education
-                  {...props}
+                  {...propss}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
@@ -80,7 +81,7 @@ const Main = (propss) => {
                 />
               )}
             /> */}
-            
+
             <Route
               path="/projects"
               render={(props) => (

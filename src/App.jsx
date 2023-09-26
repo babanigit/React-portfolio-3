@@ -18,14 +18,14 @@ import { GlobalStyles } from "./global";
 
 function App() {
 
-
   const[theme, setTheme] = useState("dark");
+  const[trail , setTrail] = useState(true);
 
   return (
     <>
       <ThemeProvider theme={themes[theme]}>
         <GlobalStyles />
-        <Main theme={themes[theme]} setTheme={setTheme} />
+        <Main theme={themes[theme]} setTheme={setTheme} setTrail={setTrail} />
       </ThemeProvider>
       {/* <ReactLogo /> */}
     </>

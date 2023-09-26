@@ -51,7 +51,7 @@ function Header(props) {
 
   const icon =
     props.theme.name === "dark" ? (
-      <HiMoon 
+      <HiMoon
         strokeWidth={1}
         size={20}
         color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
@@ -149,14 +149,11 @@ function Header(props) {
               </a>
             </li> */}
             <div className="flex ">
-
               <button className=" flex " {...styles} onClick={changeTheme}>
                 {icon}
-                </button>
+              </button>
 
-              <button {...styles} >
-                {<Aplayer />}
-                </button>
+              <button {...styles}>{<Aplayer  />}</button>
             </div>
           </ul>
         </header>
