@@ -27,15 +27,13 @@ class Aplayer extends Component {
         <div>
           <div>
             <button onClick={this.playPause}>
-              {this.state.isPlaying ? (
-                <div className="iconify" data-icon="icon-park:pause">
-                  {""}
-                </div>
-              ) : (
-                <div className="iconify" data-icon="icon-park:play">
-                  {""}
-                </div>
-              )}
+              {this.state.isPlaying ? 
+                <div className="iconify" data-icon="icon-park:pause"/>
+             
+               : 
+                <div className="iconify" data-icon="icon-park:play"/>
+                
+              }
             </button>
           </div>
         </div>
