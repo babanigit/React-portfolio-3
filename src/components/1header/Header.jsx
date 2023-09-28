@@ -155,7 +155,7 @@ function Header(props) {
               </button>
 
               <button {...styles}>{<Aplayer />}</button>
-              <button {...styles}>{<Aplayer2 />}</button>
+              {/* <button {...styles}>{<Aplayer2 />}</button> */}
             </div>
           </ul>
         </header>
