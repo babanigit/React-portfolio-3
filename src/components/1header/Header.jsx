@@ -8,7 +8,7 @@ import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 
 import Aplayer from "./Aplayer";
-import Aplayer2 from "./Aplayer2";
+// import Aplayer2 from "./Aplayer2";
 
 function Header(props) {
   const theme = props.theme;
