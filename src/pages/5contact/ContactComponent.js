@@ -6,6 +6,7 @@ import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 
 
+
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
@@ -59,8 +60,7 @@ function Contact(props) {
                 <br />
                 <a {...styles} className="general-btn" href="./Resume.pdf">
                   <a
-                    href="https://drive.google.com/file/d/12ETuD58s8iOjwnYSWfBn_XjfZnazLp0t/view?usp=drive_link/view"
-                    
+                    href={greeting.resumeLink}
                     target="_blank"
                     without
                     rel="noreferrer"

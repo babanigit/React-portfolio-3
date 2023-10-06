@@ -15,9 +15,8 @@ const greeting = {
   nickname: "ani / bablu",
   full_name: "Aniket Panchal",
   subTitle: "Full Stack Developer, digital Artist. Always learning.",
-  resumeLink:
-    "https://drive.google.com/file/d/14Al3fgsnxv_PbSxtPiW2XBEJlRLdPyNQ/view?usp=drive_link",
-    mail: "mailto:hrishipatel99@gmail.com",
+  resumeLink:"https://drive.google.com/file/d/12ETuD58s8iOjwnYSWfBn_XjfZnazLp0t/view?usp=drive_link/view",
+  mail: "aniketpanchal07@gmail.com",
 };
 
 const socialMediaLinks = {
