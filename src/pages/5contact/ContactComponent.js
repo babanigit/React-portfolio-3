@@ -58,7 +58,15 @@ function Contact(props) {
                 <br />
                 <br />
                 <a {...styles} className="general-btn" href="./Resume.pdf">
-                  See my Resume
+                  <a
+                    href="https://drive.google.com/file/d/12ETuD58s8iOjwnYSWfBn_XjfZnazLp0t/view?usp=drive_link/view"
+                    
+                    target="_blank"
+                    without
+                    rel="noreferrer"
+                  >
+                    Resume
+                  </a>
                 </a>
               </div>
             </div>
