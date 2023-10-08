@@ -2,6 +2,7 @@
 
 const lightTheme = {
   name: "light",
+  
   body: "#FFFFFF",
   text: "#343434",
   dark: "#000000",
@@ -19,6 +20,7 @@ const lightTheme = {
 
 const darkTheme = {
   name: "dark",
+
   body: "#1D1D1D",
   text: "#FFFFFF",
   dark: "#000000",
