@@ -21,14 +21,13 @@ const greeting = {
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "www.github.com/babanigit",
-  linkedin: "www.linkedin.com/in/aniket-vilas-panchal",
+  github: "https://www.github.com/babanigit",
+  linkedin: "https://www.linkedin.com/in/aniket-vilas-panchal",
   gmail: "aniketpanchal07@gmail.com",
   gitlab: " ",
   facebook: "https://www.facebook.com/profile.php?id=100014709424349",
   twitter: "",
-  instagram:
-    "https://instagram.com/changeyourthinkingg?igshid=MzRlODBiNWFlZA==",
+  instagram: "https://instagram.com/changeyourthinkingg?igshid=MzRlODBiNWFlZA==",
 };
 
 const skills = {
