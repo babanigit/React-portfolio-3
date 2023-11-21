@@ -45,7 +45,7 @@ const Main = (propss) => {
                     {...propss}
                     theme={propss.theme}
                     setTheme={propss.setTheme}
-                    setTrial = {propss.setTrial}
+                    setTrial={propss.setTrial}
                   />
                 </>
               )}
@@ -81,7 +81,6 @@ const Main = (propss) => {
                 />
               )}
             /> */}
-
             <Route
               path="/projects"
               render={(props) => (
@@ -92,7 +91,6 @@ const Main = (propss) => {
                 />
               )}
             />
-
             <Route
               path="/contact"
               render={(props) => (
