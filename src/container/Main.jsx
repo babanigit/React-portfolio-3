@@ -9,6 +9,7 @@ import Home from "../pages/1home/HomeComponent";
 import Education from "../pages/2education/EducationComponent";
 import Projects from "../pages/4projects/Projects";
 import Contact from "../pages/5contact/ContactComponent";
+import Notfound from "../components/notFound/Notfound";
 
 const Main = (propss) => {
   var demo = true;
@@ -93,13 +94,17 @@ const Main = (propss) => {
             />
             <Route
               path="/contact"
-              render={(props) => (
+              render ={(props) => (
                 <Contact
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
               )}
+            />
+            <Route
+              path="*"
+              render={<Notfound/>}
             />
           </Switch>
         </HashRouter>
