@@ -19,7 +19,7 @@ import { GlobalStyles } from "./global";
 function App() {
 
   const[theme, setTheme] = useState("dark");
-  const[trail , setTrail] = useState(true);
+  const[ , setTrail] = useState(true);
 
   return (
     <>
