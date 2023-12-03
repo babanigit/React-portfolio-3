@@ -94,7 +94,7 @@ const Main = (propss) => {
             />
             <Route
               path="/contact"
-              render ={(props) => (
+              render={(props) => (
                 <Contact
                   {...props}
                   theme={propss.theme}
@@ -102,10 +102,9 @@ const Main = (propss) => {
                 />
               )}
             />
-            <Route
-              path="*"
-              render={<Notfound/>}
-            />
+
+            {/* new added code */}
+            <Route path="*" render={() => <Notfound />} />
           </Switch>
         </HashRouter>
       </div>
